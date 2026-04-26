@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown & Clocks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="app-container">
+        <h1 class="app-title">28 апреля (МСК) &ndash; 3 мая (Иркутск)</h1>
+
+        <div class="countdown">
+            <div class="time-box">
+                <span class="value" id="days">00</span>
+                <span class="label">Дней</span>
+            </div>
+            <div class="time-box">
+                <span class="value" id="hours">00</span>
+                <span class="label">Часов</span>
+            </div>
+            <div class="time-box">
+                <span class="value" id="minutes">00</span>
+                <span class="label">Минут</span>
+            </div>
+            <div class="time-box">
+                <span class="value" id="seconds">00</span>
+                <span class="label">Секунд</span>
+            </div>
+        </div>
+
+        <div class="progress-wrapper">
+            <div class="progress-track">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="progress-labels">
+                <span>28 апр 00:00 (МСК)</span>
+                <span id="progress-text" class="progress-percent">0.0%</span>
+                <span>3 мая 00:00 (ИРК)</span>
+            </div>
+        </div>
+
+        <div class="clocks">
+            <div class="clock-card">
+                <div class="clock-label">Москва (МСК)</div>
+                <div class="clock-value" id="time-moscow">00:00:00</div>
+            </div>
+            <div class="clock-card">
+                <div class="clock-label">Иркутск (UTC+8)</div>
+                <div class="clock-value" id="time-irkutsk">00:00:00</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
