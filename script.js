@@ -13,8 +13,8 @@
     };
 
     const currentYear = new Date().getUTCFullYear();
-    const startTs = Date.UTC(currentYear, 3, 27, 21, 0, 0);
-    const endTs = Date.UTC(currentYear, 4, 1, 16, 0, 0);
+    const startTs = Date.UTC(currentYear, 3, 28, 19, 30, 0);
+    const endTs = Date.UTC(currentYear, 4, 2, 7, 15, 0);
     const totalDuration = endTs - startTs;
 
     const pad = n => n.toString().padStart(2, '0');
